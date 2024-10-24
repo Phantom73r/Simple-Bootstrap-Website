@@ -1,0 +1,240 @@
+body{
+    height: 300rem;
+}
+
+.bg-image{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.2)), url(../images/hero-bg.jpg);
+    background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+background-attachment: fixed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.bg-image::before{
+    content:"|";
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    animation: developer 2s alternate infinite 
+}
+
+@keyframes developer {
+    0%{
+        content: "D|";
+    }
+    10%{
+        content: "De|";
+    }
+    22%{
+        content: "Dev|";
+    }
+    35%{
+       content: "Deve|";
+    }
+    42%{
+        content: "Devel|";
+    }
+    47%{
+        content: "Develo|";
+    }
+    52%{
+        content: "Develop|";
+    }
+    60%{
+        content: "Develope|";
+    }
+    65%{
+        content: "Developer|";
+    }
+    74%{
+        content: "Developer|";
+    }
+    76%{
+        content: "Develope|";
+    }
+    79%{
+        content: "Develop|";
+    }
+    82%{
+        content: "Develo|";
+    }
+    85%{
+        content: "Devel|";
+    }
+    88%{
+        content: "Deve|";
+    }
+    91%{
+        content: "Dev|";
+    }
+    94%{
+        content: "De|";
+    }
+    97%{
+        content: "D|";
+    }
+    99%{
+        content: "|";
+    }
+    
+}
+
+.about-us::before{
+    content: "";
+    width: 7rem;
+    height: .2rem;
+    background-color: #0078FF;
+    position: absolute;
+    top: 2.8rem;
+}
+.w-33{
+    width: 33.3333%;
+}
+.circle, .circle2{
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    border: 10px solid #0078FF;
+    transition: all .4s;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.skills:hover .circle{
+    color: white;
+    border: 10px solid #CDE1F8;
+    background-color: #0078FF;
+}
+
+.circle2{
+    width: 6rem; 
+    height: 6rem;
+    font-size: 2rem;
+    border: 10px solid #CDE1F8;
+    color: white;
+}
+.p-10{
+    padding: 10rem;
+    background-image: linear-gradient(#0c5fbdb0,#0c5fbdb0), url(../images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.fa-circle-plus{
+    bottom: 1rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    color: #0078FF;
+}
+
+.card-portfolio img{
+    transition: all 1s;
+}
+.card-portfolio:hover img{
+    transform: scale(1.2,1.2);
+}
+
+.slider{
+    background-image: linear-gradient(#4c9cf2be , #4596EC), url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.w-10{
+    width: 10%;
+}
+.title{
+    text-align: center;
+    width: 5rem;
+    color: white;
+    transform: translate(0,-50%);
+    background-color: #0078FF !important;
+}
+
+.circle-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+border: 3px solid #0078FF;
+    text-align: center;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin: .3rem;
+}
+
+.circle-icon:hover{
+background-color: #0078FF;
+border: 3px solid #4596EC;
+color: white;
+}
+.p-10-no-bg{
+    padding: 8rem;
+
+
+}
+.send-us::before{
+    content:"";
+    width: 6rem;
+    height: .2rem;
+    top: 5.5rem;
+    background-color: #0078FF;
+    position: absolute;
+}
+
+.dash{
+    /* top: 8rem;
+    left: 45%; */
+    width: 3rem;
+    height: 3px;
+    background-color: #0078FF;
+}
+.card-hover{
+    transition: all 1s;
+}
+.card-hover:hover{
+    color: #0078FF;
+}
+
+.long-dash{
+    top: 2.4rem;
+    left: 4rem;
+    width: 6rem;
+    height: 2px;
+    background-color: #0078FF;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: .8rem !important;
+    height: .8rem !important;
+border-radius: 50%;
+}
+
+/* Style for dropdown-submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+}
+
+/* Show nested dropdown when hovering or clicking */
+.dropdown-submenu:hover .dropdown-menu, .dropdown-submenu:focus-within .dropdown-menu {
+    display: block;
+}
+
